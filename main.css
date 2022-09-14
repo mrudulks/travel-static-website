@@ -1,3 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+:root{
+    --bg-grey:#F5F6F8;
+    --color-blue1:#4141A5;
+    --color-blue2:#34A5E4;
+    --color-text1:#292929;
+    --color-text2:#5C6272;
+    --color-text3:#EE6D52;
+    --font12:0.75rem;
+    --font14:0.875rem;
+    --font16:1rem;
+    --font18:1.125rem;
+    --font20:1.25rem;
+    --font22:1.375rem;
+    --font24:1.5rem;
+}
 body{
-    background-color: grey;
+    background-color: var(--bg-grey);
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*Common Css*/
+a{
+    text-decoration: none;
+}
+/* button */
+.btn-search{
+    background-color: var(--color-blue2);
+    color: #fff;
+    padding: 1rem;
+    border-radius: .2rem;
+}
+/*Hero section*/
+#hero{
+    background-image: url('./static/hero-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
+#hero .hero-main{
+    height: 100%;
+}
+#hero header{
+    padding-top: 1.875rem;
+}
+#hero .nav-bar{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+#hero .nav-bar .navigation{
+    display: flex;
+    align-items: center;
+}
+#hero .nav-bar .navigation a{
+    padding: 1rem;
+    font-size:var(--font14);
+    color: #fff;
+    text-transform: lowercase;
+}
+#hero .nav-bar .nav-actions .btn-create{
+    color: #fff;
+    font-size: var(--font14);
+    text-transform: capitalize;
+    padding: 1rem;
+    border: 1.5px solid #777F96;
+}
+#hero .hero-contents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+#hero .hero-contents .title{
+    font-size: 68px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+#hero .hero-contents .sub-title{
+    text-align: center;
+    font-size: var(--font18);
+    color: #fff;
+}
+#hero .search-input  input{
+    margin-right: .5rem;
+    border-radius: .2rem;
+}
+#hero .search-input button{
+
 }
